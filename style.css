@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Panel Verde Izquierdo */
+.sidebar {
+    background-color: #2ac42a;
+    color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.sidebar h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.schedule {
+    list-style: none;
+    text-align: left;
+}
+
+.schedule li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.schedule span {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* Columna de Notas Derecha */
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: #444;
+}
+
+.card h2 {
+    color: #5cb85c;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.header-icon, .card-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+/* Para que se vea bien en el móvil */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
